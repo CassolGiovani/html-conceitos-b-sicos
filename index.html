@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML BÁSICO">
+        <title>Tipos de teste e ferramentas de teste</title>  
+    </head>
+    
+    <body>
+        <div style="margin: 0 auto; max-width: 800px;">
+        
+            <h1 id="topo">Tipos de teste e ferramentas de teste</h1>
+            <hr/>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#tipos">Tipos de teste</a></li>
+                <li><a href="#finais">Conciderações finais</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+            <hr/>
+            <h2>Introdução</h2>
+            <p>
+                Para que a equipe de qualidade desempenhasse seu trabalho de forma a otimizar tempo
+            e esforços são criados testes, os quais são divididos em níveis e tipos para que cada qual
+            seja utilizado da melhor forma a depender do nível de esforço ou trabalho assegurando o
+            equilíbrio de ênfase e esforço de trabalho em cada nível de teste, sendo assim os níveis
+            de teste são:
+            </p>
+            <h3 id="tipos">Teste Unitário ou de Unidade:</h3>
+            <p>
+                Como o nome já sugere o teste unitário verifica um método, função ou classe de modo
+isolado, único ou individual. Seu propósito e de evitar erros de homologação na fase de
+Q.A
+            </p>
+            <p>
+                Como complemento apresenta-se algumas dicas para realizar bons testes Unitários,
+                sendo estas:    
+            </p>
+            <ul>
+                <li><b>Liste os seus testes unitários:</b> Isso ajuda a saber qual teste você está realizando.</li>
+                <li><b>Testes Unitários precisam ser curtos:</b>O teste unitário precisa ser o mais fechado,unitário e curto possível.</li>
+                <li><b>Evite testes repetitivos:</b>Cada um dos testes precisam ter um objetivo muito claro e a repetição de testes apenas tomará tempo.</li>
+                <li><b>Valide seu teste:</b>Faça e refaça seus testes, explore e utilize-os.</li>
+                <li><strong>Não ignore os testes!</strong></li>
+            </ul>
+            <h3>Teste de Integração ou componente</h3>
+            <small><a href="#topo">(voltar)</a></small>
+            <p>
+                Esse tipo de teste é mais comum de ser feito pelo
+            desenvolvedor, mas também pode ser feito pelo Q.A ou Tester.<br>
+            A diferença entre teste de componente e teste de unidade é que no teste integrado
+            olhamos para duas funções para garantir que não há nenhuma quebra no que foi feito
+            unitariamente e no que está sendo compilado junto.<br>
+            Testes de componentes são comuns em projetos que envolvem várias pessoas que
+            desenvolvem este software em partes, tem por objetivo encontrar falhas na integração
+            das unidades e é realizada geralmente pelo time de desenvolvedores.<br>
+            Uma das aplicabilidades pode ser em testes de interface, para garantir e testar as
+            dependências dos componentes.<br>
+            Mesmo o Q.A não estando envolvido no teste de integração é interessante a sua
+            participação a fim de facilitar a entrega de qualidade para o time.
+            </p>
+            <p>
+                A fins de economia de tempo, geralmente em algumas empresas o time pode escalar
+            uma pessoa para ficar responsável pelos testes de integração.<br>
+            Em algumas organizações o time de qualidade pode usar mocks, fakes ou stubs, que são
+            programas emuladores onde simula " Algo fingindo ser outro para que não precise ser
+            este outro", ou seja, um ambiente emulado com as condições necessárias para rodar os
+            componentes a serem testados .
+            </p>
+            <h2>Níveis de teste</h2>
+            <h3>Teste de Sistema</h3>
+            <p>
+                Nesta etapa teoricamente o produto já está desenvolvido e
+            pronto para testar as funcionalidades, o objetivo deste nível é analisar que o sistema
+            como um todo funcionará como esperado pelo cliente, encontrando possíveis
+            inconsistências relacionadas aos requisitos, regras de negocio, produto e etc.
+            </p>
+            <Strong>Dicas de como realizar bons testes de sistema:</Strong>
+            <ol>
+            <li> Usar ferramentas eficazes para controle de testes.</li>
+            <li> Testes de sistema precisam ser feitos em um ambiente especifico para testes, ambiente de homologação.</li>
+            <li> O QA precisa de um material para consulta.</li>
+            <li> Tenha uma equipe multidisciplinar e valorize o trabalho em equipe.</li>
+            <li> Tenha testes constantes no sentido de continuidade</li> 
+        </ol>
+            <ul>
+                <li><b>Testes funcionais:</b> Tem por objetivo garantir o fluxo do produto dentro do
+                    universo perfeito, ou seja, que as funcionalidades que deveriam operar de maneira X
+                    realmente operem de maneira X e não Y.</li>
+                <li><b>Testes não funcionais:</b> De oposto aos testes funcionais, os testes não
+                    funcionais tem por objetivo testar o universo imperfeito do produto, testar o que o
+                    produto não deve fazer, procurando por bugs, erros de funcionalidade e texto.</li>
+                <li><b>Teste de Usabilidade:</b> Nesta camada é verificado se o produto é realmente
+                    útil para o objetivo ao qual foi projetado, afinal de nada adiante vender um carro sem as
+                    rodas, o produto continuaria sendo um carro porém inútil para a função que foi
+                    projetado.</li>
+                <li><b>Teste de Performance:</b> Esta camada verifica o desempenho geral do
+                    produto como capacidade , velocidade e afins.</li>
+                <li><b>Teste de Regreção:</b> É um aglomerado dos testes anteriores, porem com
+                    escopo reduzido, e tem por objetivo garantir a qualidade em uma nova versão do
+                    produto, sua aplicação é feita sempre que tenha atualização do produto garantindo a
+                    funcionalidade dos recursos antigos e também dos novos que entrarão em operação.</li>
+                <li><b>Teste de Segurança: </b> Garantir a segurança do produto forçando quebra de
+                    informações sigilosas e corrigindo falhas de segurança</li>
+            </ul>
+            <h2>Processos do teste de sistema</h2>
+            <ol>
+                <li><b>Mapeamento:</b> Levantar casos de testes, o que é preciso ser testado nesse
+                    produto e construir cenários com base nos requisitos requisitados.</li>
+                <li><b>Modelagem:</b> Seguido do mapeamento já com os casos de testes prontos e
+                    filtrados, na modelagem é descrito a forma, o passo a passo e o resultado esperado do
+                    teste, a modelagem descreve como o teste deverá ser realizado como uma receita de
+                    bolo.</li>
+                <li><b>Execução:</b> Se a modelagem é o ato de escrever a receita, a Execução e o ato de
+                    fazer o bolo, colocar o programa para funcionar e verificar se funcionará como o
+                    planejado.</li>
+                <li><b>Teste de aceite:</b> Assim como o teste de Sistema o teste de Aceite é voltado
+                    para as funcionalidades do produto porém com um escopo bem menor.
+                    Voltado para o usuário final ou PO, este nível visa garantir que o produto é o que se
+                    espera que ele seja.</li>
+                    <h4>Dicas para teste de aceite:</h4>
+                    <ul>
+                        <li>Entenda responsabilidades:</li>
+                        <li>O cliente precisa saber que esta fase é para que ele mesmo teste o produto,
+                            evitando problemas e não volte de produção com problemas.</li>
+                        <li>O cliente pode utilizar os testes do QA.</li>
+                        <li>Escreva BDDs com os clientes.</li>
+                        <li>Realize testes de aceite quando encontrar bugs, melhorias e atts.</li>
+                    </ul>
+            </ol>
+            <h2 id="finais">Considerações finais:</h2>
+            <small><a href="#topo">(voltar)</a></small>
+            <p><strong>Sêquência e cronometragem dos níveis de teste:</strong></p>
+            <p>
+                Tradicionalmente pensam que o teste de unidade é implementado logo na interação
+            como primeiro teste, todas as unidades requeridas para serem transmitidas antes dos
+            estágios subsequentes são conduzidas. No entanto, em um processo de desenvolvimento
+            interativo essa abordagem é uma regra geral inapropriada, uma abordagem melhor é
+            identificar os testes de unidade, de integração e do sistema que ofereçam mais potencial
+            para a localização de erros e em seguida implementar, executando com base em uma
+            combinação do maior risco e do ambiente de suporte.
+            </p>
+            <h2>Ferramentas de teste</h2>
+            <p>
+                Primeiramente, ferramentas de teste e testes manuais são objetos distintos, já que podemos
+            optar por testes manualmente ou utilizar de alguma ferramenta para nos auxiliar, sendo que
+            estas ferramentas podem ser existentes no mercado ou criadas pelo próprio Q.A, tendo
+            também a possibilidade de automatizar as mesmas.
+            </p>
+            <p>
+                Sendo assim, cada ferramenta de teste possui sua própria característica, proposta e
+            padrão o que a torna pouco personalizável e em alguns casos dependendo do seu uso
+            pode ser ineficaz, a principal vantagem no uso dessas ferramentas esta na sua agilidade.
+            </p>
+            <p>
+                Em contra partida, os testes manuais são altamente personalizáveis, e por isso são
+            seguros já que o utilizador os conhece de ponta a ponta entrada e saída do processo.
+            Porém sua maior desvantagem está no longo tempo gasto, já que este tipo de processo
+            costuma ser muito lento, alem de que o teste pode simplesmente não funcionar
+            dependendo do conhecimento e experiência do operador.
+            </p>
+            <p>
+                Aprofundando no mundo dos testes de software observa-se que deveríamos imaginar os
+            testes como algo alem de automatizados ou manuais, já que se observarmos ambos
+            individualmente chegaremos a conclusão de que sim, são importantes, mas totalmente
+            substituíveis, entretanto, se observarmos todo o universo de testes de uma forma ampla
+            de conhecimento sendo os testes manuais uma bolha bem pequena dentro do mundo dos
+            testes de software, ampliamos a maneira que enxergamos nosso trabalho, e o que era
+            teste manual agora passa a ser uma verificação manual e podemos facilmente
+            automatizar estes processos pois teoricamente um teste automatizado é capaz de
+            substituir um teste manual.
+            </p>
+            <h3>Conhecendo algumas ferramentas:</h3>
+            <p>
+                As ferramentas de testes de software são inúmeras no mercado, sendo que cada uma
+            realiza testes em um determinado ponto no software, um exemplo de ferramenta é o
+            Cucumber, que realiza execução de cenários e pode utilizar outras ferramentas como o
+            Calabash ou Capybara para automação.
+            </p>
+            <h3>Muitas outras ferramentas existem, algumas delas são:</h3>
+            <ul>
+                <li><b>PhantosJS:</b> Ferramenta para automação web porem já descontinuada.</li>
+                <li><b>SoapUI:</b> Ferramenta de Web service</li>
+                <li><b>Protractor:</b> Primeira ferramenta para testes com Java Script</li>
+                <li><b>Appium, MonkeyUI:</b> Automação mobille</li>
+                <li><b>CasperJS:</b> Automação de Java Script</li>
+                <li><b>JMeter:</b> Teste de Performance</li>
+                <li><b>WireMock:</b> Para criação de mocks</li>
+                <li><b>JUnit, NUnit, Jest, PyTest, C Unit, Kotlin Test:</b> Para teste de Unidade</li>
+                <li><b>Galling:</b> Para teste de Performance</li>
+                <li><b>Postman, JetPackt, Karate, RestLet:</b> Para microservices</li>
+                <li><b>Serenity BDD:</b> Para multiplataformas</li>
+                <li><b>Apion e Expresso:</b> Para mobile</li>
+                <li><b>Selenium:</b> Mais popular para testes automatizados</li>
+            </ul>
+            <h2 id="referencias">Referências:</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCFuIUoyHB12qpYa8Jpxoxow">CODIGO FONTE TV</a></li>
+                <li><a href="https://www.youtube.com/watch?v=gfy7I-inixY">GUIA ANONIMA</a></li>
+                <li><a href="https://www.youtube.com/watch?v=5ttKj-rBBSM">JULIO DE LIMA</a></li>
+                <li><a href="https://www.youtube.com/channel/UCwWUziFUFY2TRkQ79zjmIuA">LELEMAINE CHANNEL</a></li>
+                <li><a href="https://www.youtube.com/channel/UC2q9a8E7ugN_Gqxxb5Mrf4A">PESSONIZANDO</a></li>
+                <li><a href="https://www.cin.ufpe.br/~gta/rupvc/core.base_rup/guidances/concepts/levels_of_test_8A878577.html>">CLN UFPE</a></li>
+            </ul>
+            <hr/>
+        <footer>
+            <a href="#topo">Voltar ao topo da página</a>
+            <p>Praticando conceitos básicos de HTML, Giovani Vitor Cassol 2024.</p>
+        </footer>
+        </div>
+    </body>
+</html>
